@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <title>Dashboard Confessional</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/style/style.min.css">
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqZtLqS5U3t2QNJ56VZ-4005LiVbtFe8g&callback=initMap"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+        <script src="assets/javascript/functionality.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid" id="launchpage">
+            <div class="row">
+                <div class="offset-3 col-md-6" id="formlogin">
+                    <h2>Hello Stranger! Wanna login?</h2>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="emailform" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="passwordform" placeholder="Enter Password">
+                    </div>
+                    <button type="select" class="btn btn-primary" id="login">Login</button>
+                    <button type="select" class="btn btn-primary" id="newuserpage">New User</button>
+                </div>
+                <div class="offset-3 col-md-6" id="formnewuser">
+                  <h2>Give us your information and we promise not to sell it to the Russians.</h2>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="name" class="form-control" id="nameform" placeholder="Enter Name">
+                    </div>
+                    <!--
+                    Working on Auth
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="emailform" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="passwordform" placeholder="Enter Password">
+                    </div>
+                    -->
+                    <div class="form-group">
+                      <label for="animal">What's your favorite animal?</label>
+                      <input type="animal" class="form-control" id="animalform" placeholder="Enter Animal">
+                    </div>
+                    <div class="form-group">
+                      <label for="color">Pick a Color</label>
+                        <select class="form-control" id="colorform">
+                          <option>Red</option>
+                          <option>Orange</option>
+                          <option>Yellow</option>
+                          <option>Green</option>
+                          <option>Blue</option>
+                          <option>Purple</option>
+                          <option>Gray</option>
+                          <option>White</option>
+                        </select>
+                    </div>
+                    <button type="select" class="btn btn-primary" id="loginpage">Login</button>
+                    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-3 col-md-6">
+                  <h3>Created and Maintained by LH, AC, AW</h3>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

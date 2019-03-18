@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <title>Dashboard Confessional</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/style/style.min.css">
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqZtLqS5U3t2QNJ56VZ-4005LiVbtFe8g&callback=initMap"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+        <script src="assets/javascript/functionality.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid" id="dash-page">
+            <div class="row" id="header">
+                <div class="col-md-12">
+                    <h1>Welcome <span id="user-name"></span></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                  <div class="row">
+                      <div class="offset-1 col-md-10" id="nyt-div">
+                          <div class="nyt-api">
+                              <h2>Top Articles at the New York Times</h2>
+                              <hr>
+                              <div id="nyt-articles">
+                                  <!--articles append here-->
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="offset-1 col-md-10" id="giphy-div">
+                          <div class="giphy-api">
+                              <h2>Daily Cute Dose</h2>
+                              <hr>
+                              <div id="cute-animals">
+                                  <!--giphy appends here-->
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="row">
+                      <div class="offset-1 col-md-9" id="weather-div">
+                          <div id="weather-api">
+                              <h2>Weather</h2>
+                              <div id="weather-display">
+                                  <!--weather appends here-->
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="offset-1 col-md-9" id="map-div">
+                          <div class="map-api">
+                              <h2>Location</h2>
+                              <hr>
+                              <div id="map-display" style="height:200px">
+                                  <!--map appends here-->
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="offset-1 col-md-9" id="food-div">
+                          <div class="food-api">
+                              <h2>Local Eats</h2>
+                              <hr>
+                              <div id="restaurants">
+                                  <!--restaurants appends here-->
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="offset-3 col-md-6">
+                <h3>Created and Maintained by LH, AC, AW</h3>
+              </div>
+            </div>
+        </div>
+    </body>
+</html>
